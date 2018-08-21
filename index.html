@@ -2,20 +2,29 @@
   <body>
     <form action="https://formspree.io/bioceuro18@in.tum.de"
       method="POST">
-      <p>Last Name <input type="text" name="lastname"></p> 
-      <p>First Name <input type="text" name="firstname"></p>
+      <p>Last Name <input type="text" name="lastname"> First Name <input type="text" name="firstname"></p>
+      
       <p> Name of institution <input type="text" name="inst_name"></p>
+      
+      <p>Participation:</p>
       <p>
         <input type="radio" name="participate" value="poster">Poster only<br>
         <input type="radio" name="participate" value="talk">Talk<br>
-        <input type="radio" name="participate" value="none">None<br>
+        <input type="radio" name="participate" value="none">Attend only<br>
       </p>
+      
       <p>Title of poster/talk (optional): <input type="text" name="poster_title"></p>
-      <p>Abstract: <input type="text" name="abstract"></p>
-      <p>Email address: <input type="email" name="_replyto"></p>
-      <p>Co-authors: <input type="text" name="co_authors"></p>
+      
+      <p>Abstract</p> 
+      <p><textarea rows="4" cols="50" name="abstract"></p>
+     
+      <p>Co-authors</p>
+      <p><textarea rows=3 cols="50" name="co_authors"></p>
+      
       <p><input type="checkbox" name="dinner_party" value="join_dinner">I am joining the dinner party (self-funded)</p>
-      <input type="email" name="_replyto">
+      
+      <p>Email address: <input type="email" name="_replyto"></p>
+      
       <input type="submit" value="Send">
     </form>
   </body>
