@@ -1,42 +1,55 @@
 <html>
   <body>
-    Register to attend the European Bioconductor Meeting 2018
+    <div class="container">
     <form action="https://formspree.io/zosa@in.tum.de"
       method="POST">
-      <p>Last Name <input type="text" size="30" name="Last_Name" required> First Name <input type="text" size="30" name="First_Name" required></p>
+      <h3> Register to attend the European Bioconductor Meeting 2018 </h3>
+      <fieldset>
+        Last Name <input type="text" size="30" name="Last_Name" required> First Name <input type="text" size="30" name="First_Name" required>
+      </fieldset>
       
-      <p> Name of institution <input type="text" size="35" name="Institution_Name" required></p>
+      <fieldset>
+        Name of institution <input type="text" size="35" name="Institution_Name" required>
+      </fieldset>
       
-      <p>Participation <br />
+      <fieldset>
+        Participation <br />
         <input type="radio" name="Participation" value="Poster">Poster only<br>
         <input type="radio" name="Participation" value="Talk">Talk<br>
         <input type="radio" name="Participation" value="None" checked="checked">Attend only<br>
-      </p>
+      </fieldset>
       
-      <p>Title of poster/talk (optional)</p>
-      <p><input type="text" size="50" name="Poster_Title"></p>
+      <fieldset>
+        Title of poster/talk (optional)<br />
+        <input type="text" size="50" name="Poster_Title">
+      </fieldset>
       
-      <p>Abstract (optional)</p> 
-      <p>
-        <textarea rows="6" cols="40" name="Abstract">
-        </textarea>
-      </p>
+      <fieldset>
+        Abstract (optional)<br /> 
+        <textarea rows="6" cols="40" name="Abstract"></textarea>
+      </fieldset>
      
-      <p>Co-authors (optional)</p>
-      <p>
-        <textarea rows=3 cols="40" name="Co_Authors">
-        </textarea>
-      </p>
+      <fieldset>
+        Co-authors (optional)<br />
+        <textarea rows=3 cols="40" name="Co_Authors"> </textarea>
+      </fieldset>
       
-      <p><input type="checkbox" name="Dinner_Party" value="join_dinner">I am joining the dinner party (self-funded)</p>
+      <fieldset>
+        <input type="checkbox" name="Dinner_Party" value="join_dinner">I am joining the dinner party (self-funded)
+      </fieldset>
       
-      <p>Email address <input type="email" size="35" name="_replyto" required></p>
+      <fieldset>
+        Email address <input type="email" size="35" name="_replyto" required>
+      </fieldset>
       
       <input type="hidden" name="_subject" value="EuroBioc2018 Registration" />
       <input type="hidden" name="_cc" value="zosa@in.tum.de" />
       <input type="hidden" name="_format" value="plain" />
       
       <input type="submit" value="Register">
+      
+      <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
     </form>
+    </div>
   </body>
 </html>
