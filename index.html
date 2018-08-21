@@ -2,7 +2,7 @@
   <body>
     <form action="https://formspree.io/bioceuro18@in.tum.de"
       method="POST">
-      <p>Last Name <input type="text" name="lastname"> First Name <input type="text" name="firstname"></p>
+      <p>Last Name <input type="text" size="35" name="lastname"> First Name <input type="text" size="35" name="firstname"></p>
       
       <p> Name of institution <input type="text" name="inst_name"></p>
       
@@ -12,27 +12,25 @@
         <input type="radio" name="participate" value="none">Attend only<br>
       </p>
       
-      <p>Title of poster/talk (optional): <input type="text" name="poster_title"></p>
+      <p>Title of poster/talk (optional): <input type="text" size="50" name="poster_title"></p>
       
       <p>Abstract (optional)</p> 
       <p>
-        <textarea rows="4" cols="50" name="abstract">
-          Abstract
+        <textarea rows="6" cols="50" name="abstract">
         </textarea>
       </p>
      
       <p>Co-authors (optional)</p>
       <p>
         <textarea rows=3 cols="50" name="co_authors">
-          Co-authors
         </textarea>
       </p>
       
       <p><input type="checkbox" name="dinner_party" value="join_dinner">I am joining the dinner party (self-funded)</p>
       
-      <p>Email address: <input type="email" name="_replyto"></p>
+      <p>Email address <input type="email" size="35" name="_replyto"></p>
       
-      <input type="submit" value="Send">
+      <input type="submit" value="Register">
     </form>
   </body>
 </html>
